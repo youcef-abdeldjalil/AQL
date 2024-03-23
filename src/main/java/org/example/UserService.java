@@ -9,4 +9,14 @@ public class UserService {
             ServiceException {
         utilisateurApi.creerUtilisateur(utilisateur);
     }
+    public boolean creerUtilisateurReturnBoolean(Utilisateur utilisateur) throws
+            ServiceException {
+
+        return utilisateurApi.creerUtilisateurReturnBoolean(utilisateur);
+    }
+    public int creerUtilisateurReturnId(Utilisateur utilisateur) throws
+            ServiceException {
+
+        return utilisateurApi.creerUtilisateurReturnId(utilisateur);
+    }
 }

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d01ee8c4-6db0-46ad-9771-2425dec32877" name="Changes" comment="calculatrice test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ServiceException.java" afterDir="false" />
+    <list default="true" id="d01ee8c4-6db0-46ad-9771-2425dec32877" name="Changes" comment="utilisateurapi test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Utilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UtilisateurApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UtilisateurApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +42,11 @@
     "JUnit.CalculatriceTest.executor": "Run",
     "JUnit.CalculatriceTest.testAdditionner.executor": "Run",
     "JUnit.UserServiceTest.testCreerUtilisateur.executor": "Run",
+    "JUnit.UserServiceTest.testCreerUtilisateurAvecException.executor": "Run",
+    "JUnit.UserServiceTest.testCreerUtilisateur_ErreurValidation.executor": "Run",
+    "JUnit.UserServiceTest.testCreerUtilisateur_withCapture.executor": "Run",
+    "JUnit.UserServiceTest.testCreerUtilisateur_withReturn.executor": "Run",
+    "JUnit.UserServiceTest.testCreerUtilisateur_withReturn0.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -56,16 +65,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.testCreerUtilisateur">
-    <configuration name="CalculatriceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TP2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CalculatriceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserServiceTest.testCreerUtilisateur_withCapture">
     <configuration name="CalculatriceTest.testAdditionner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TP2" />
       <option name="PACKAGE_NAME" value="" />
@@ -86,11 +86,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest.testCreerUtilisateur_withCapture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
+      <option name="METHOD_NAME" value="testCreerUtilisateur_withCapture" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testCreerUtilisateur_withReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
+      <option name="METHOD_NAME" value="testCreerUtilisateur_withReturn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testCreerUtilisateur_withReturn0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
+      <option name="METHOD_NAME" value="testCreerUtilisateur_withReturn0" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest.testCreerUtilisateur" />
+        <item itemvalue="JUnit.UserServiceTest.testCreerUtilisateur_withCapture" />
+        <item itemvalue="JUnit.UserServiceTest.testCreerUtilisateur_withReturn" />
         <item itemvalue="JUnit.CalculatriceTest.testAdditionner" />
-        <item itemvalue="JUnit.CalculatriceTest" />
+        <item itemvalue="JUnit.UserServiceTest.testCreerUtilisateur_withReturn0" />
+        <item itemvalue="JUnit.UserServiceTest.testCreerUtilisateur" />
       </list>
     </recent_temporary>
   </component>
@@ -134,13 +166,30 @@
       <option name="project" value="LOCAL" />
       <updated>1710926008293</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="utilisateurapi test">
+      <option name="closed" value="true" />
+      <created>1711186650898</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711186650898</updated>
+    </task>
+    <task id="LOCAL-00005" summary="utilisateurapi test">
+      <option name="closed" value="true" />
+      <created>1711186726330</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711186726330</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project creation" />
     <MESSAGE value="calculatrice test" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculatrice test" />
+    <MESSAGE value="utilisateurapi test" />
+    <option name="LAST_COMMIT_MESSAGE" value="utilisateurapi test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -149,6 +198,15 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
+          <line>111</line>
+          <properties class="UserServiceTest" method="testCreerUtilisateur_withCapture">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
